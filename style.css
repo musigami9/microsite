@@ -1,0 +1,227 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Work Sans';
+}
+
+h1 {
+  padding: 15px 0px 0px 0px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h4{
+  color: rgb(52, 94, 163);
+  display: inline;
+}
+
+p, a {
+  font-family: 'Work Sans';
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 3px solid black;
+}
+
+.spacer {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.horiz_spacer {
+  height: 10px;
+  width: 15px;
+  display: inline-block;
+}
+
+.categories {
+  	display: inline-block;
+  }
+
+.subtitle {
+  padding-left: 30px;
+}
+
+@media (min-width: 1000px) {
+  .center {
+    width: 965px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  img.thumbnail, .tint, div.caption {
+    width: 223.5px;
+  }
+
+  img.thumbnail{
+      height: 223.5px;
+      object-fit: cover;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+  .tint:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(52, 94, 163, 0.8);
+      -moz-transition: all .3s linear;
+      -webkit-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+    }
+
+  .tint:hover:before {
+    background: none;
+   }
+
+  .tint {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    height: 223.5px;
+  }
+
+  div.caption {
+   display: table;
+   display: block;
+   display: table-cell;
+   color: black;
+ }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+  .center {
+      width: 420px;
+      margin: 0 auto;
+    }
+
+    img.thumbnail, .tint, div.caption {
+      width: 198px;
+    }
+
+    img.thumbnail{
+        height: 198px;
+        object-fit: cover;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+    .tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(52, 94, 163, 0.8);
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+      }
+
+    .tint:hover:before {
+      background: none;
+     }
+
+    .tint {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      height: 198px;
+    }
+
+    div.caption {
+     display: table;
+     display: block;
+     display: table-cell;
+     color: black;
+  }
+
+  .horiz_spacer.hide {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 399px) {
+  .center {
+      width: 290px;
+      margin: 0 auto;
+    }
+
+    img.thumbnail, .tint, div.caption {
+      width: 290px;
+    }
+
+    img.thumbnail{
+        height: 290px;
+        object-fit: cover;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+    .tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(52, 94, 163, 0.8);
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+      }
+
+    .tint:hover:before {
+      background: none;
+     }
+
+    .tint {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      height: 290px;
+    }
+
+    div.caption {
+     display: table;
+     display: block;
+     display: table-cell;
+     color: black;
+   }
+
+  .horiz_spacer.hide {
+    display: none;
+  }
+}
+
+#home {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: white;
+  padding: 3px;
+}
